@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The result</title>
+</head>
+<body>
+        <table>
+            <tr>
+                <td>Method</td>
+                <td>Number</td>
+            </tr>
+            {% for i in query %}
+                <tr>
+                <td>{{ i.method }}</td>
+                <td>{{ i.number_of_request }}<td>
+            </tr>
+        {%  endfor %}
+
+        </table>
+        <form method='post' action='/'>
+        <input type="submit" />
+    </form>
+</body>
+</html>
